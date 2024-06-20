@@ -1,7 +1,8 @@
 *{
     margin:0;
     padding:0;
-    font-size: 16px;
+    font-size: 15px;
+    box-sizing: border-box;
 }
 
 body{
@@ -11,7 +12,7 @@ body{
 
 
 .product{
-    width: 825px;
+    width: 800px;
     margin: 50px auto;
     border: 5px solid black;
 }
@@ -46,6 +47,7 @@ body{
 
 .box-container{
     margin: 20px 0;
+    margin-top: 40px;
 }
 
 .box:first-child{
@@ -93,17 +95,27 @@ body{
     text-transform: uppercase;
     font-weight: bold;
     font-size: 13px;
-
-}
-
-.details-list{
-    list-style: square;
-    margin: 10px 20px;
+    padding-top: 8px;
+    float: right;
 }
 
 .price{
     font-weight: bold;
     font-size: 25px;
+    float: left;
+    
+}
+
+.clearfix:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+
+.details-list{
+    list-style: square;
+    margin: 10px 20px;
 }
 
 li{
@@ -129,10 +141,34 @@ button{
     cursor: pointer;
     width: 100%;
     padding: 10px 0;
-
+    clear: both;
 }
 
 button:hover{
     background-color: white;
     color: black;  
 }
+
+
+.mid-section{
+   height: 250px;
+   width: 100%;
+}
+
+.product-img{
+    width: 250px;
+    height: 250px;
+    float: left;
+}
+
+
+
+.inner-container{
+    float: left;
+    width: 250px;
+    vertical-align: top;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+
