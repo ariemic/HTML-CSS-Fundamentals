@@ -48,6 +48,9 @@ body{
 .box-container{
     margin: 20px 0;
     margin-top: 40px;
+    display: flex;
+    gap: 8px;
+    
 }
 
 .box:first-child{
@@ -78,9 +81,10 @@ body{
 .box{
     width: 20px;
     height: 20px;
-    display: inline-block;
+    /* display: inline-block;
     margin-right: 8px;
-    vertical-align: middle;
+    vertical-align: middle; */
+    
 }
 
 .details{
@@ -95,22 +99,18 @@ body{
     text-transform: uppercase;
     font-weight: bold;
     font-size: 13px;
-    padding-top: 8px;
-    float: right;
+    
+    
+    /* float: right; */
 }
 
 .price{
     font-weight: bold;
     font-size: 25px;
-    float: left;
+    /* float: left; */
     
 }
 
-.clearfix:after{
-    content: "";
-    clear: both;
-    display: block;
-}
 
 
 .details-list{
@@ -151,24 +151,29 @@ button:hover{
 
 
 .mid-section{
-   height: 250px;
-   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   gap:40px;
+   
+
 }
 
 .product-img{
-    width: 250px;
     height: 250px;
-    float: left;
+    flex:1;
+    
 }
 
 
 
 .inner-container{
-    float: left;
-    width: 250px;
-    vertical-align: top;
-    margin-left: 20px;
-    margin-top: 20px;
+    flex:1;
+    margin-top: 10px;
 }
 
-
+.product-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
