@@ -22,7 +22,7 @@ body{
     background-color: #f7f7f7;
     
     padding: 20px 40px;
-    margin-bottom: 60px;
+    
     /* height: 80px; */
 }
 
@@ -32,11 +32,11 @@ aside {
     border-bottom: 5px solid #76c2ce;
     padding: 50px 40px;
     
-    flex: 0 0 300px;
+    /* flex: 0 0 300px; */
 }
 
 article{
-    flex:1;
+    /* flex:1; */
 }
 
 
@@ -287,11 +287,36 @@ nav{
     margin-bottom: 5px;
     display: block;
 }
-
+/* 
 section{
     display: flex;
     align-items: flex-start;
     gap: 75px;
     margin-bottom: 50px;
 
+} */
+
+/* CSS GRIC LAYOUT */
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    column-gap: 75px;
+    row-gap: 60px;
+}
+
+.main-header{
+    grid-column: 1 / span 2;
+}
+
+article{
+
+}
+
+aside{
+    align-self: start;
+}
+
+footer{
+    grid-column: 1 / -1;
 }

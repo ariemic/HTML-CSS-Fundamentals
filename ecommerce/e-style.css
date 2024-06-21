@@ -150,24 +150,13 @@ button:hover{
 }
 
 
-.mid-section{
-   display: flex;
-   justify-content: space-between;
-   gap:40px;
-   
-
-}
 
 .product-img{
-    height: 250px;
-    flex:1;
-    
+    height: 250px;    
 }
-
 
 
 .inner-container{
-    flex:1;
     margin-top: 10px;
 }
 
@@ -176,4 +165,14 @@ button:hover{
     align-items: center;
     justify-content: space-between;
     
+}
+
+.product{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 40px;
+}
+
+.product-title, button{
+    grid-column: 1 / -1;
 }
