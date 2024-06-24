@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagination Component</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        color: #343a40;
+        line-height: 1;
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .container {
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .links {
+        display: flex;
+        gap: 12px;
+      }
+
+      .link-box {
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .link-box:hover {
+        background-color: #087f5b;
+      }
+
+      /* This adjustment ensures that when you hover over the link-box, the anchor tag inside will immediately change its color to white. */
+      .link-box:hover a {
+        color: #fff;
+      }
+
+      a:link,
+      a:visited {
+        text-decoration: none;
+        color: #343a40;
+      }
+
+      a:hover,
+      a:active {
+        background-color: #087f5b;
+        color: #fff;
+      }
+
+      .btn-icon {
+        height: 24px;
+        width: 24px;
+        stroke: #087f5b;
+      }
+
+      .btn {
+        flex: 0 0 48px;
+        background-color: #fff;
+        border-radius: 50%;
+        border: 1px solid #087f5b;
+        padding: 8px;
+        cursor: pointer;
+      }
+
+      .btn:hover {
+        background-color: #087f5b;
+      }
+      .btn:hover .btn-icon {
+        stroke: #fff;
+        border: none;
+      }
+
+      span {
+        transform: translate(0, 5px);
+        color: #adb5bd;
+      }
+
+      /* added style for always active 3rd link design */
+      .link-box--fill {
+        background-color: #087f5b;
+      }
+
+      .link-box--fill a {
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <button class="btn btn--left">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="btn-icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 19.5 8.25 12l7.5-7.5"
+          />
+        </svg>
+      </button>
+
+      <div class="links">
+        <div class="link-box">
+          <a href="#">1</a>
+        </div>
+        <div class="link-box">
+          <a href="#">2</a>
+        </div>
+        <div class="link-box link-box--fill">
+          <a href="#">3</a>
+        </div>
+        <div class="link-box">
+          <a href="#">4</a>
+        </div>
+        <div class="link-box">
+          <a href="#">5</a>
+        </div>
+        <div class="link-box">
+          <a href="#">6</a>
+        </div>
+        <span>...</span>
+        <div class="link-box">
+          <a href="#">23</a>
+        </div>
+      </div>
+
+      <button class="btn btn--right">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="btn-icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m8.25 4.5 7.5 7.5-7.5 7.5"
+          />
+        </svg>
+      </button>
+    </div>
+  </body>
+</html>
