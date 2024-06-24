@@ -6,3 +6,9 @@ background-size: cover;
 background-image: linear-gradient(to right, red, blue);
 height: 100vh;
 ```
+
+> scroll
+
+```css
+overflow: scroll;
+```
