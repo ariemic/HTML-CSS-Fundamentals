@@ -14,6 +14,11 @@
   transition: all 0.4s;
 }
 
+.meal:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+
 .meal-title {
   font-size: 2.4em;
   font-weight: 700;
