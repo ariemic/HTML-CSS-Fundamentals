@@ -23,7 +23,9 @@ Paragraph default: 1.6
 - Tints:: #fdf2e9, #fae5d3
 - Shades: #cf711f
 - Accents:#51cf66, #a9e34b, #ffe066
-- Greys: #555, #333, #888
+- Greys: 
+#6f6f6f (lightest grey allowed)
+#555, #333, #888
 
 --- 05 SHADOWS
 
@@ -190,4 +192,8 @@ body {
 
 .list {
   list-style: none;
+}
+
+img {
+  width: 100%;
 }
