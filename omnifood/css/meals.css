@@ -19,21 +19,38 @@
   font-weight: 700;
   color: #333;
   text-align: start;
-  margin: 1.2rem 0 2rem 0;
+  margin: 1.2rem 0 3rem 0;
 }
 
 .meal-content {
-  padding: 2.4rem 4.8rem;
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
 }
 
 .meal-attributes {
   display: flex;
-  gap: 1.2rem;
+  gap: 2rem;
   flex-direction: column;
   list-style: none;
 }
 
 .meal-attribute {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.meal-icon {
+  font-size: 2.4rem;
+  color: #e67e22;
+}
+
+.meal-span {
+  color: #555;
+  font-size: 1.8rem;
+}
+
+.meal-span--number {
+  font-weight: 600;
 }
 
 .meal-tags {
@@ -63,8 +80,18 @@
 .tag-vegan {
   background-color: #a9e34b;
 }
-
 /* <--------------- diet list -----------------> */
+
+.diets p {
+  text-align: start;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
 .list-icon {
   width: 2.4rem;
   height: 2.4rem;
@@ -79,9 +106,9 @@
   display: flex;
   align-items: center;
   gap: 1.6rem;
-  margin-bottom: 1.8rem;
 }
 
+/* <--------------- LINK ----------------------> */
 .all-recipes {
-  margin-top: 4.4rem;
+  font-size: 1.8rem;
 }
