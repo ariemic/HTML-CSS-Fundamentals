@@ -667,47 +667,58 @@
         </div>
       </section>
       <section class="section-cta margin-bottom-md">
-        <div class="container grid-cta">
-          <div class="cta-text-container">
-            <p class="heading-secondary cta-title">
-              Get your first meal for free!
-            </p>
-            <p class="cta-text">
-              Healthy, tasty and hassle-free meals are waiting for you. Start
-              eating well today. You can cancel or pause anytime. And the first
-              meal is on us!
-            </p>
-            <form action="#" method="get" class="form-cta grid grid--2-cols">
-              <div class="form-item">
-                <label for="full-name">Full Name</label>
-                <input
-                  type="text"
-                  name="submitted-full-name"
-                  id="full-name"
-                  placeholder="John Smith"
-                  required
-                />
-              </div>
-              <div class="form-item">
-                <label for="email">E-mail address</label>
-                <input
-                  type="emaFull Nameil"
-                  name="submitted-full-email"
-                  id="email"
-                  placeholder="john.smith@gmail"
-                  required
-                />
-              </div>
-              <div class="form-item">
-                <label for="select-where">Where did you hear from us?</label>
-                <select name="" id="select-where">
-                  <option value=""></option>
-                </select>
-              </div>
-              <button class="btn btn--from">Sign up now</button>
-            </form>
+        <div class="container">
+          <div class="cta">
+            <div class="cta-text-container">
+              <p class="heading-secondary cta-title">
+                Get your first meal for free!
+              </p>
+              <p class="cta-text margin-bottom-md">
+                Healthy, tasty and hassle-free meals are waiting for you. Start
+                eating well today. You can cancel or pause anytime. And the
+                first meal is on us!
+              </p>
+              <form action="#" method="get" class="form-cta grid grid--2-cols">
+                <div class="form-item">
+                  <label for="full-name">Full Name</label>
+                  <input
+                    type="text"
+                    name="submitted-full-name"
+                    id="full-name"
+                    placeholder="John Smith"
+                    required
+                  />
+                </div>
+                <div class="form-item">
+                  <label for="email">Email address</label>
+                  <input
+                    type="email"
+                    name="submitted-full-email"
+                    id="email"
+                    placeholder="john.smith@gmail"
+                    required
+                  />
+                </div>
+                <div class="form-item">
+                  <label for="select-where">Where did you hear from us?</label>
+                  <select name="" id="select-where" required>
+                    <option value="">Please choose one option:</option>
+                    <option value="friends">Friends and family</option>
+                    <option value="youtube">YouTube video</option>
+                    <option value="podcast">Podcast</option>
+                    <option value="ad">Facebook ad</option>
+                    <option value="others">Others</option>
+                  </select>
+                </div>
+                <button class="btn--form">Sign up now</button>
+              </form>
+            </div>
+            <div
+              class="cta-img-box"
+              role="img"
+              aria-label="Woman enjoying food"
+            ></div>
           </div>
-          <img src="img/eating.jpg" alt="woman eating food" class="img-cta" />
         </div>
       </section>
     </main>
