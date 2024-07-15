@@ -42,6 +42,7 @@
 .img-gallery {
   display: block;
   transition: all 0.4s;
+  width: 100%;
 }
 
 .img-gallery:hover {

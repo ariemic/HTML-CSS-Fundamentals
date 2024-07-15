@@ -7,6 +7,7 @@
 - Font weights:
 Default: 400
 Bold: 600
+Very bold: 700
 
 - Line heights:
 Default: 1
@@ -128,6 +129,10 @@ body {
   gap: 9.6rem 6.4rem;
 }
 
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+
 .grid--2-cols {
   grid-template-columns: repeat(2, 1fr);
 }
@@ -194,6 +199,26 @@ body {
   list-style: none;
 }
 
-img {
-  width: 100%;
+.padding-tp-bg {
+  padding-top: 9.6rem;
+}
+
+.plan-name {
+  text-transform: uppercase;
+  color: #cf711f;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2.4rem;
+}
+
+.plan-price {
+  font-size: 5.2rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1.6rem;
+}
+.plan-text {
+  font-size: 1.6rem;
+  color: #6f6f6f;
+  margin-bottom: 6.4rem;
 }
