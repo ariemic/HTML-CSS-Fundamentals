@@ -1,3 +1,6 @@
+.section-cta {
+  margin: 6.4rem 0 12.8rem 0;
+}
 .cta-img-box {
   background-image: linear-gradient(
       to right bottom,
@@ -21,7 +24,7 @@
   overflow: hidden;
 
   /* TEMP */
-  height: 50rem;
+  /* height: 50rem; */
 }
 .cta-text-container {
   color: #45260a;
@@ -29,16 +32,17 @@
 }
 
 .cta-title {
-  color: #45260a;
+  /* color: #45260a; */
+  color: inherit;
   margin-bottom: 3.2rem;
 }
 .cta-text {
   font-size: 1.8rem;
   line-height: 1.8;
-  color: #333;
+  color: inherit;
 }
 
-.form-cta {
+.cta-form {
   row-gap: 2.4rem;
   column-gap: 3.2rem;
 }
@@ -49,19 +53,30 @@
 }
 
 .form-item label {
-  color: #45260a;
+  color: inherit;
   font-size: 1.6rem;
   font-weight: 500;
   margin-bottom: 1.2rem;
 }
 
-.form-item input {
-  padding: 1rem;
-  color: #6f6f6f;
-  font-size: 2rem;
-  border-radius: 11px;
+.form-item input,
+.form-item select {
+  padding: 1.2rem;
+  font-family: inherit;
+  font-size: 1.8rem;
+  color: inherit;
+
+  border-radius: 9px;
   border: none;
+  background-color: #fdf2e9;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-.form-item select {
+.cta-form input::placeholder {
+  color: #6f6f6f;
+}
+
+.cta *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(235, 233, 232, 0.5);
 }

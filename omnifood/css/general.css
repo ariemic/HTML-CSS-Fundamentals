@@ -64,6 +64,7 @@ body {
   margin: 0 auto;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -72,7 +73,10 @@ body {
   border-radius: 9px;
   text-decoration: none;
   font-weight: 600;
+
+  border: none;
   cursor: pointer;
+  font-family: inherit;
 
   /* IMPORTANT TRANSITION COLORS */
   transition: background-color 0.3s;
@@ -104,6 +108,18 @@ body {
   /* border: 3px solid #fff; whole design change we don't want it*/
   /* IMPORTANT CREATE BORDER INSIDE THE BUTTON */
   box-shadow: inset 0 0 0 3px #fff;
+}
+
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: self-end;
+  padding: 1.2rem;
+}
+
+.btn--form:hover {
+  background-color: #fff;
+  color: #555;
 }
 
 .link:link,
@@ -197,6 +213,15 @@ body {
 
 .list {
   list-style: none;
+}
+
+/* FOCUS STATE */
+*:focus {
+  outline: none;
+  /* outline: 4px dotted #e67e22;
+  outline-offset: 8px; */
+
+  box-shadow: 0 0 0 0.8rem rgb(230, 126, 34, 0.5);
 }
 
 .padding-tp-bg {
