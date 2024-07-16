@@ -14,6 +14,7 @@ Default: 1
 Small: 1.05
 Medium: 1.2
 Paragraph default: 1.6
+Large: 1.8
 
 -Letter spacing
 -05px
@@ -49,6 +50,7 @@ medium: 11px
 html {
   /* Procentage of user's browser font-size setting -> by setting 10px user can't change it */
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
@@ -56,6 +58,9 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+
+  /* Only works if there is nothing absolutely position to */
+  overflow-x: hidden;
 }
 
 .container {
@@ -113,7 +118,7 @@ body {
 .btn--form {
   background-color: #45260a;
   color: #fdf2e9;
-  align-self: self-end;
+  align-self: end;
   padding: 1.2rem;
 }
 
@@ -165,10 +170,6 @@ body {
 
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
-}
-
-.grid--5-cols {
-  grid-template-columns: repeat(5, 1fr);
 }
 
 .grid--center-v {

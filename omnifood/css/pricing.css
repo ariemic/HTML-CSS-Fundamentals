@@ -27,6 +27,10 @@
   overflow: hidden;
 }
 
+.plan-sing-up {
+  margin-top: auto;
+}
+
 .pricing-plan--complete::after {
   content: "Best value";
   display: block;
