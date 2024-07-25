@@ -82,6 +82,7 @@ body {
   border: none;
   cursor: pointer;
   font-family: inherit;
+  text-align: center;
 
   /* IMPORTANT TRANSITION COLORS */
   transition: background-color 0.3s;

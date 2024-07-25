@@ -11,6 +11,14 @@
 }
 
 .pricing-plan {
+  /* added to makes button stick always to the end vertical edge 
+  previous was problem with --complete version
+   */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /*  */
+
   padding: 4.6rem;
   border-radius: 11px;
   width: 75%;
@@ -25,10 +33,6 @@
   background-color: #fdf2e9;
   position: relative;
   overflow: hidden;
-}
-
-.plan-sing-up {
-  margin-top: auto;
 }
 
 .pricing-plan--complete::after {
