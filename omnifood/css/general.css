@@ -51,6 +51,8 @@ html {
   /* Procentage of user's browser font-size setting -> by setting 10px user can't change it */
   font-size: 62.5%;
   overflow-x: hidden;
+  /* scroll behavior */
+  scroll-behavior: smooth;
 }
 
 body {
